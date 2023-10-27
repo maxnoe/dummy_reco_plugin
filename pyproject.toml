@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ctlearn_plugin"
+version = "0.1.0"
+dependencies = [
+    "ctapipe",
+]
+
+[project.entry-points.ctapipe_reco]
+CTLearnReconstructor = "ctlearn_plugin:CTLearnReconstructor"
